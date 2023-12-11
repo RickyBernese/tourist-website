@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ABRA TOURIST SPOTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("image/acosta.png");
+  height: 130%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button">MENU</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header style="display: container;"
+class="bgimg" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span style="font-size: 30px;
+                  font-family: 'Times New Roman', Times, serif; 
+                 background-color: rgb(11, 239, 255); 
+                 background-size: 20px; 
+                 padding-left: 10px; 
+                 padding-right: 10px;
+                 border-radius: 20px;">LOCATED AT BANGUED ABRA</span>
+  </div>
+  <div style="display: center; 
+               text-align: center;
+               padding-top: 20%;">
+    <span style="font-size:100px; color: white; display: contents;">Acosta<br> Bangued Pancitan</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Acosta<br>Bangued Pancitan</b></span>
+    <p><a href="#about" class="w3-button w3-xxlarge w3-black">see the menu</a></p>
+  </div>
+</header>
+
+
+
+<!-- About Container -->
+<div style="float: left; padding-left: 20px; padding-top: 10px; color: azure; text-shadow: 10PX;">
+  <h1><b>OPENING TIME</b></h1>
+  <h1><b>MONDAY-FRIDAY - 5:00am to 5:00pm</b></h1>
+  <h1><b>SATURDAY - 6:00am to 4:00pm</b></h1>
+  <h1><b>SUNDAY - 5:00am to 5:00pm</b></h1>
+</div>
+<div class="w3-container w3-padding-50% w3-red " id="about">
+  <div style="float: left; padding-left: 5px;">
+    <div class="w3-content"  > 
+    <img src="image/acosta1.png" style="width:80%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>SPECIAL</b></h1>
+    <h1><b>Price $50</b></h1>
+    <h1><b>ADDITIONAL $15 for a meat</b></h1> 
+</div>
+</div>
+    <div class="w3-content">
+    <img src="image/acosta3.png" style="width:60%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>SEMI-SPECIAL</b></h1>
+    <h1><b>Price $40 </b></h1>
+    <h1><b>ADDITIONAL $15 for a meat </b></h1>
+</div>
+  
+    <div class="w3-content" style="float: left;">
+    <img src="image/acosta2.png" style="width:60%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>ORDINARY</b></h1>
+    <h1><b>Price $30</b></h1>
+    <h1><b>ADDITIONAL $15 for a meat </b></h1>
+     </div>
+</div>
+
+<!-- Footer -->
+<div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15212.589571840164!2d120.61516044922635!3d17.59573443323586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x338e5bf1b6dbd25f%3A0x59f6baa72db6a0a5!2sBangued%2C%20Abra!3m2!1d17.5881847!2d120.6314948!4m5!1s0x338e5eaae74850b9%3A0x55ee92b20dbd35c7!2sAcosta%20Panciteria%2C%20JJ39%2B895%2C%20Bangued%2C%20Abra!3m2!1d17.6032778!2d120.6184578!5e0!3m2!1sen!2sph!4v1686359643810!5m2!1sen!2sph" width="1600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
